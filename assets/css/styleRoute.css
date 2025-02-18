@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-container-routes {
+    height: 100vh;
+    background-image: url(../img/rioNegro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overlay-hero {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    & h1 {
+        font-family: Montserrat;
+        font-size: 10rem;
+        font-weight: bold;
+    }
+}
+
+.explore-container {
+    height: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-text {
+    flex: 1;
+    width: 50%;
+}
+
+.explore-gallery {
+    flex: 1;
+    width: 50%;
+
+    & .rectangle {
+        box-sizing: border-box;
+        position: absolute;
+        border: 5px solid #060400;
+
+        border-radius: 40px;
+    }
+
+    & .rect1 {
+        width: 383px;
+        height: 625px;
+        left: 1292px;
+        top: 1325px;
+    }
+
+    & .rect2 {
+        width: 341px;
+        height: 677px;
+        left: 1051px;
+        top: 1723px;
+    }
+
+    & .explore-img {
+        position: absolute;
+width: 577px;
+height: 384.71px;
+/* left: 1102px;
+top: 2085px; */
+
+/* background: url(laguna-tres.jpg); */
+border-radius: 10px;
+    }
+}
+
+
+/* Estilos generales */
+
+.routes-container {
+    max-width: 2000px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #d2d2d2;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.route {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.route-day {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.route-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #a9c4a9;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.route-title:hover {
+    background-color: #8fad8f;
+}
+
+.route-text {
+    display: block;
+    padding: 10px 0;
+}
+
+.route-text p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.route-img {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.route-img img {
+    max-width: 100%;
+    border-radius: 10px;
+}
