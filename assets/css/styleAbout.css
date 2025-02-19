@@ -1,0 +1,80 @@
+.hero-container-about {
+    height: 100vh;
+    background-image: url(../img/casa_rosada.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overlay-hero {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    & h1 {
+        font-family: Montserrat;
+        font-size: 10rem;
+        font-weight: bold;
+    }
+}
+
+.ministro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    padding: 2rem;
+    max-width: 1200px;
+}
+
+.ministro-img img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.ministro-info {
+    text-align: center;
+}
+
+.workers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.workers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 1200px;
+}
+
+.worker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    padding: 2rem;
+    max-width: 1200px;
+}
+
+.worker img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.worker-info {
+    padding: 2rem;
+}
