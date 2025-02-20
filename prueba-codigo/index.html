@@ -1,91 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Discover Argentina</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Serif', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f5f0;
+        }
+        .container {
+            display: flex;
+            max-width: 1100px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 40px;
+        }
+        .left {
+            flex: 1;
+            padding: 40px;
+            background: #f8f5f0;
+            color: #3a2e2b;
+        }
+        .right {
+            flex: 1;
+            background: white;
+            padding: 40px;
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #5a4d4a;
+        }
+        .info {
+            margin: 20px 0;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .social-icons a {
+            margin-right: 10px;
+            font-size: 18px;
+            color: #b87333;
+            text-decoration: none;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .send-btn {
+            background: #3a2e2b;
+            color: white;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="contact-container">
-            <!-- Contact Information -->
-            <div class="contact-info">
-                <h2>Contact Us</h2>
-                <p>If you have any questions or need assistance, feel free to reach out to us.</p>
-                
-                <div class="offices">
-                    <h3>Our Offices</h3>
-                    <ul>
-                        <li>
-                            <strong>Buenos Aires Office</strong><br>
-                            Av. Corrientes 1234, Buenos Aires, Argentina<br>
-                            <a href="tel:+541100000000">+54 11 0000-0000</a><br>
-                            <a href="mailto:contact@argentinaoffice.com">contact@argentinaoffice.com</a>
-                        </li>
-                        <li>
-                            <strong>Córdoba Office</strong><br>
-                            Av. Colón 5678, Córdoba, Argentina<br>
-                            <a href="tel:+543515000000">+54 351 5000-0000</a><br>
-                            <a href="mailto:cordoba@argentinaoffice.com">cordoba@argentinaoffice.com</a>
-                        </li>
-                        <li>
-                            <strong>Rosario Office</strong><br>
-                            Calle San Martín 876, Rosario, Argentina<br>
-                            <a href="tel:+543413000000">+54 341 3000-0000</a><br>
-                            <a href="mailto:rosario@argentinaoffice.com">rosario@argentinaoffice.com</a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="container">
+        <div class="left">
+            <h2>Contact me</h2>
+            <p>Massa urna magnis dignissim eu euismod porttitor vitae etiam viverra at adipiscing sit morbi aliquet mauris porttitor nisi.</p>
+            <div class="info">
+                <p><strong>📍 Office</strong><br>1234 N Spring St, Los Angeles, CA 90012, United States.</p>
+                <p><strong>📞 Phone</strong><br>+01 - 123 456 7890</p>
+                <p><strong>📧 Email</strong><br>mail@example.com</p>
             </div>
-
-            <!-- Directions Section -->
-            <div class="directions">
-                <h3>How to Get to Argentina</h3>
-                <p>Here are some travel suggestions from major cities around the world:</p>
-                <ul>
-                    <li>
-                        <strong>From New York:</strong> Fly to Ministro Pistarini International Airport (Ezeiza), Buenos Aires (Approx. 10-11 hour flight).
-                    </li>
-                    <li>
-                        <strong>From London:</strong> Fly to Ministro Pistarini International Airport (Ezeiza), Buenos Aires (Approx. 13-hour flight).
-                    </li>
-                    <li>
-                        <strong>From Paris:</strong> Fly to Ministro Pistarini International Airport (Ezeiza), Buenos Aires (Approx. 14-hour flight).
-                    </li>
-                    <li>
-                        <strong>From Sydney:</strong> Fly to Ministro Pistarini International Airport (Ezeiza), Buenos Aires (Approx. 22-hour flight with a stopover).
-                    </li>
-                    <li>
-                        <strong>From Tokyo:</strong> Fly to Ministro Pistarini International Airport (Ezeiza), Buenos Aires (Approx. 23-hour flight with a stopover).
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Contact Form Section -->
-            <div class="contact-form">
-                <h3>Contact Form</h3>
-                <p>Fill out the form below to get in touch with us.</p>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" placeholder="Write your message here..." rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+            <div class="social-icons">
+                <a href="#">🔗</a>
+                <a href="#">🔗</a>
+                <a href="#">🔗</a>
+                <a href="#">🔗</a>
             </div>
         </div>
-    </section>
-
+        <div class="right">
+            <h2>Send a message</h2>
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Comment or Message"></textarea>
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
