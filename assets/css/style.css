@@ -130,8 +130,11 @@ nav {
     flex: 1;
     width: 50%;
     padding: 2rem;
-
-    border: 1px solid #201717;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .right-present {
@@ -141,23 +144,40 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Añadido para que los elementos hijos con posición absoluta se posicionen respecto a este contenedor */
-    border: 1px solid #201717;
+   
 }
 
 .right-present img {
-    height: 500px;
-    position: relative; /* Asegúrate de que la imagen esté en una capa superior */
-    z-index: 2; /* Asegúrate de que la imagen esté en una capa superior */
+    height: 900px;
+    
 }
 
-.right-present .square {
-    width: 200px;
-    height: 200px;
-    background-color: #201717;
-    position: absolute;
-    bottom: -60px; /* Ajusta según sea necesario */
-    right: 130px; /* Ajusta según sea necesario */
-    z-index: 1; /* Asegúrate de que el cuadrado esté detrás de la imagen */
+
+
+
+/* -------------------------- ROUTES ------------------------------------- */
+
+.routes-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
+.buenos-aires {
+    flex: 1;
+
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bbaa-img {
+    height: 100%;
+    background-image: url(/assets/img/obelisco.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
